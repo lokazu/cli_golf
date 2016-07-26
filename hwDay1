@@ -1,0 +1,245 @@
+Last login: Mon Jul 25 14:43:04 on ttys000
+niranmanandhar ~ on master[!?]
+$ ls
+2	       Documents/  Movies/    Public/  fundamentals/  src/
+Applications/  Downloads/  Music/     World/   funny_things/
+Desktop/       Library/    Pictures/  code/    post.txt
+niranmanandhar ~ on master[!?]
+$ cd code/
+niranmanandhar ~/code on master[!?]
+$ ls
+kitchen/  wdi/
+niranmanandhar ~/code on master[!?]
+$ cd kitchen/
+niranmanandhar ~/code/kitchen on master[!?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+niranmanandhar ~/code/kitchen on master[!?]
+$ ls
+cans.txt  fridge/  pantry/
+niranmanandhar ~/code/kitchen on master[!?]
+$ ff trashcan/
+-bash: ff: command not found
+niranmanandhar ~/code/kitchen on master[!?]
+$ rm cans.txt 
+removed 'cans.txt'
+niranmanandhar ~/code/kitchen on master[!?]
+$ ls
+fridge/  pantry/
+niranmanandhar ~/code/kitchen on master[!?]
+$ 
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd fridge
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ rm diapers.txt
+removed 'diapers.txt'
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd trashcan
+niranmanandhar ~/code/kitchen/fridge/trashcan on master[!?]
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+niranmanandhar ~/code/kitchen/fridge/trashcan on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ mvdir trashcan ~/code/kitchen/
+-bash: mvdir: command not found
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ mv trashcan ~/code/kitchen/
+'trashcan' -> '/Users/niranmanandhar/code/kitchen/trashcan'
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd trashcan/
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd fridge/
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ ls
+freezer/  milk.txt
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ mkdir crisper-drawer
+gmkdir: created directory 'crisper-drawer'
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ ls
+crisper-drawer/  freezer/  milk.txt
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd crisper-drawer/
+niranmanandhar ~/code/kitchen/fridge/crisper-drawer on master[!]
+$ touch apples.txt
+niranmanandhar ~/code/kitchen/fridge/crisper-drawer on master[!?]
+$ touch lettuce.txt
+niranmanandhar ~/code/kitchen/fridge/crisper-drawer on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd freezer/
+niranmanandhar ~/code/kitchen/fridge/freezer on master[!?]
+$ touch frozenpeas.txt
+niranmanandhar ~/code/kitchen/fridge/freezer on master[!?]
+$ touch icecream.txt
+niranmanandhar ~/code/kitchen/fridge/freezer on master[!?]
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+niranmanandhar ~/code/kitchen/fridge/freezer on master[!?]
+$ rm couch.txt
+removed 'couch.txt'
+niranmanandhar ~/code/kitchen/fridge/freezer on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ ls
+crisper-drawer/  freezer/  milk.txt
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd crisper-drawer/
+niranmanandhar ~/code/kitchen/fridge/crisper-drawer on master[!?]
+$ ls
+apples.txt  lettuce.txt
+niranmanandhar ~/code/kitchen/fridge/crisper-drawer on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/fridge on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ ls
+fridge/  pantry/  trashcan/
+niranmanandhar ~/code/kitchen on master[!?]
+$ mkdir sink
+gmkdir: created directory 'sink'
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd pantry/
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ touch cans.txt
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ touch cereal.txt
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ rmdir crisper-drawer/
+rmdir: crisper-drawer/: Directory not empty
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ cd crisper-drawer/
+niranmanandhar ~/code/kitchen/pantry/crisper-drawer on master[!?]
+$ ls
+lettuce.txt
+niranmanandhar ~/code/kitchen/pantry/crisper-drawer on master[!?]
+$ rm lettuce.txt 
+removed 'lettuce.txt'
+niranmanandhar ~/code/kitchen/pantry/crisper-drawer on master[!]
+$ rmdir crisper-drawer/
+rmdir: crisper-drawer/: No such file or directory
+niranmanandhar ~/code/kitchen/pantry/crisper-drawer on master[!]
+$ cd ../
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ rmdir crisper-drawer/
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ ls
+cans.txt  cereal.txt
+niranmanandhar ~/code/kitchen/pantry on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd sink/
+niranmanandhar ~/code/kitchen/sink on master[!]
+$ ls
+niranmanandhar ~/code/kitchen/sink on master[!]
+$ touch dirty-dishes.txt
+niranmanandhar ~/code/kitchen/sink on master[!?]
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+niranmanandhar ~/code/kitchen/sink on master[!?]
+$ cd drying-rack/
+niranmanandhar ~/code/kitchen/sink/drying-rack on master[!]
+$ touch clean-dishes.txt
+niranmanandhar ~/code/kitchen/sink/drying-rack on master[!?]
+$ ls
+clean-dishes.txt
+niranmanandhar ~/code/kitchen/sink/drying-rack on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/sink on master[!?]
+$ ls
+dirty-dishes.txt  drying-rack/
+niranmanandhar ~/code/kitchen/sink on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd trashcan/
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ rm sink/
+grm: cannot remove 'sink/': Is a directory
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ rmdir sink/
+rmdir: sink/: Directory not empty
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ cd sink/
+niranmanandhar ~/code/kitchen/trashcan/sink on master[!?]
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+niranmanandhar ~/code/kitchen/trashcan/sink on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ rm -rf sink/
+removed 'sink/clean-dishes.txt'
+removed 'sink/delete-me.txt'
+removed 'sink/dirty-dishes.txt'
+removed directory 'sink/'
+niranmanandhar ~/code/kitchen/trashcan on master[!?]
+$ cd ../
+niranmanandhar ~/code/kitchen on master[!?]
+$ cd ../
+niranmanandhar ~/code on master[!?]
+$ cd kitchen/
+niranmanandhar ~/code/kitchen on master[!?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+niranmanandhar ~/code/kitchen on master[!?]
+$ 
